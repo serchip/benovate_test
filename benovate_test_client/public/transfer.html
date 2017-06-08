@@ -1,0 +1,16 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balance</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/react-select/dist/react-select.css">
+</head>
+<body>
+<div id="mount-point"></div>
+<script type="text/javascript" src="{% static "build/bundle.js" %}"></script>
+{% render_bundle 'main' %}
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "benovate_test",
+  "version": "0.1.0",
+  "description": "Client part for benovate test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8090 --host 127.0.0.1",
+    "build": "webpack --config webpack.config.js --progress --colors",
+    "build-production": "webpack --config webpack.prod.config.js --progress --colors",
+    "watch": "node server.js"
+  },
+  "author": "Ser Chip",
+  "license": "ISC",
+  "dependencies": {
+    "es6-promise": "^4.1.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-cookies": "0.0.1",
+    "react-dom": "^15.5.4",
+    "react-masonry-component": "^5.0.6",
+    "react-modal-dialog": "^4.0.7",
+    "react-numeric-input": "^2.0.7",
+    "react-select": "^1.0.0-rc.5"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "*",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "json-loader": "*",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "style-loader": "*",
+    "url-loader": "*",
+    "webpack": "^2.6.1",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
